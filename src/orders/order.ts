@@ -1,4 +1,4 @@
-import { ItemDTO } from './../interfaces/ItemItenterface'
+import { ItemDTO } from '../interfaces/ItemItenterface'
 import TaxItem from "../isTaxItem/TaxItems"
 import OrderDTO from "../interfaces/orderIterface"
 
