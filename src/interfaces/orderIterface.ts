@@ -1,6 +1,6 @@
 import { ItemDTO } from './ItemItenterface';
 
 export default interface OrderDTO {
-  code: number
+  code: string
   items: ItemDTO[]
 }

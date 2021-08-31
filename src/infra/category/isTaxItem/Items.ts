@@ -1,4 +1,4 @@
-import { ItemDTO } from '../interfaces/ItemItenterface';
+import { ItemDTO } from '../../../interfaces/ItemItenterface';
 
 export default abstract class Item implements ItemDTO{
     category: string
