@@ -27,14 +27,14 @@ export default class Order {
 
   //added
   //tested
-  addOrder(): OrderDTO[] {
+  addOrder(productList: ItemDTO[]): OrderDTO {
     let newOrder = {
       code: `${Math.floor(Math.random() * (5000000000 - 1))}`,
-      items: []
+      items: productList
     }
 
     this.orderList.push(newOrder)
-    return this.orderList
+    return newOrder
   }
 
   //added

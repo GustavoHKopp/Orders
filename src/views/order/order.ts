@@ -48,8 +48,9 @@ route.get('/category', (_: Request, res: Response) => {
 
 
 ///new Order///
-route.post('/order', (_: Request, res: Response) => {
-    res.json(order.addOrder())
+route.post('/add-order', (req: Request, res: Response) => {
+    const productList = req.body
+    res.json(order.addOrder(productList))
 })
 
 ///new Item in Order///
